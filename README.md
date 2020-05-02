@@ -1,1 +1,1 @@
-# JS-rocketseat-starter
+Projetos feitos durante o curso de JavaScript na Rockeseat
