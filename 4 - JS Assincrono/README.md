@@ -19,7 +19,7 @@ console.log("Menor que 18");
 <h2>2º exercício</h2>
 Crie uma tela com um <input> que deve receber o nome de um usuário no Github. Após digitar onome do usuário e clicar no botão buscar a aplicação deve buscar pela API do Github (conformeURL abaixo) os dados de repositórios do usuário e mostrá-los em tela:
 
-URL de exemplo: https://api.github.com/users/<usuario>/repos
+URL de exemplo: ``` https://api.github.com/users/<usuario>/repos ```
 
 ```
 <input type="text" name="user"><button onclick="">Adicionar</button>
