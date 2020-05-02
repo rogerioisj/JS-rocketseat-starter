@@ -28,7 +28,13 @@ URL de exemplo: ``` https://api.github.com/users/<usuario>/repos ```
 Depois de preencher o input e adicionar, a seguinte lista deve aparecer abaixo:
 
 ```
-<ul>  <li>repo1</li>  <li>repo2</li>  <li>repo3</li>  <li>repo4</li>  <li>repo5</li></ul>
+<ul>  
+<li>repo1</li>
+<li>repo2</li>
+<li>repo3</li>
+<li>repo4</li>
+<li>repo5</li>
+</ul>
 ```
 
 <h2>3º exercício</h2>
