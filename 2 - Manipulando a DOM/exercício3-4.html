@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 3-4 JS - Manipulando a DOM</title>
+</head>
+
+<body>
+    <div>
+        <ul class="list" id="listaNomes">
+
+        </ul>
+    </div>
+    <div>
+        <input type="text" name="nome">
+        <button class="botao">Adicionar</button>
+    </div>
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        nomes.forEach(elemento => {
+
+            var listElement = document.createElement('li');
+            listElement.setAttribute("id", elemento);
+            listElement.innerText = elemento;
+
+            var containerElement = document.getElementById("listaNomes");
+            containerElement.appendChild(listElement);
+
+        });
+
+        var btnElement = document.querySelector('button.botao');
+        console.log(btnElement);
+
+        btnElement.onclick =  function inserirNome(){
+
+            var inputElement = document.querySelector('input[name="nome"]');
+            var nome = inputElement.value;
+
+            var listElement = document.createElement('li');
+            listElement.setAttribute("id", nome);
+            
+            listElement.innerText = nome;
+
+            var containerElement = document.getElementById("listaNomes");
+            containerElement.appendChild(listElement);
+
+            inputElement.value = "";
+        }
+    </script>
+</body>
+
+</html>

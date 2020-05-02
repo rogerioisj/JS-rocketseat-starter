@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 1 JS - Manipulando a DOM</title>
+</head>
+
+<body>
+    <div id=app>
+        <div class='button'>
+            <button onclick="criaQuadrado()"> Cria Quadrado</button>
+        </div>
+        <div id='app'></div>
+    </div>
+    <script>
+        cont = 0;
+        function criaQuadrado() {
+            cont++;
+            var boxElement = document.createElement('div');
+            boxElement.setAttribute('class', 'box');
+            boxElement.setAttribute('id', "a" + cont);
+            boxElement.setAttribute('onmouseover', 'setNovaCor(this)');
+            boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.float = 'left';
+            boxElement.style.backgroundColor = '#F00';
+            console.log(boxElement);
+
+            var criarElemento = document.querySelector('#app');
+            criarElemento.appendChild(boxElement);
+        }
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+
+        }
+        
+
+        function setNovaCor(elemento) {
+            var newColor = getRandomColor();
+            console.log(elemento);
+            var boxId = elemento.id;
+            var boxSelector = document.querySelector(boxId);
+            elemento.style.backgroundColor = newColor;
+        }
+    </script>
+</body>
+
+</html>

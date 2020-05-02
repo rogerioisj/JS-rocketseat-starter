@@ -1,0 +1,21 @@
+<html>
+    <title>Aula 5 Javascript</title>
+    <body>
+        <script>
+            var usuarios = [  
+                {    
+                    nome: "Diego",
+                    habilidades: ["Javascript", "ReactJS", "Redux"]  
+                },  
+                {    
+                    nome: "Gabriel",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]  
+                }
+            ];
+            for (const iterator of usuarios) {
+                var skills = iterator.habilidades;
+                console.log("O "+ iterator.nome +" possui as habilidades: "+ skills.join(', ') +"");
+            }
+        </script>
+    </body>
+</html>
