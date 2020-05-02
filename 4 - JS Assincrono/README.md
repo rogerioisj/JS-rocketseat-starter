@@ -22,7 +22,8 @@ Crie uma tela com um <input> que deve receber o nome de um usuário no Github. A
 URL de exemplo: ``` https://api.github.com/users/<usuario>/repos ```
 
 ```
-<input type="text" name="user"><button onclick="">Adicionar</button>
+<input type="text" name="user">
+<button onclick="">Adicionar</button>
 ```
 
 Depois de preencher o input e adicionar, a seguinte lista deve aparecer abaixo:
